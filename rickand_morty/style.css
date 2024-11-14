@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+#app{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.3);
+}
+.family{
+    color: green;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.nav-bar{
+    position: absolute;
+    top: 0;
+    background-color: #ccc;
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20rem;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.nav li {
+    list-style: none;
+    margin: 0 10px;
+    padding: 0;
+    cursor: pointer;
+}
+.nav li a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s ease;
+    position: relative;
+    font-size: 1.5rem;
+}
+.nav li a:hover {
+    color: green;
+}
+.menu::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: green;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+    bottom: -3px;
+    left: 0;
+}
+.nav li:hover .menu::after{
+    transform: scaleX(1);
+}
+.die-alive{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
