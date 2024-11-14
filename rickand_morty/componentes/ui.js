@@ -1,7 +1,7 @@
 import criarCard from "./card.js";
 function mostrarCard(container, dados) {
     container.innerHTML = "";
-    dados.results.forEach((item) => {
+    ʝdados.results.forEach((item) => {
     const card = criarCard(item);
     container.appendChild(card);
   });
